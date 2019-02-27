@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta charset="utf-8">
+    <title>Project FOOD</title>
+    <style media="all">
+      h1 {
+        text-align: center;
+      }
+      body {
+        font-family: arial;
+        background-color:rgb(215, 228, 210);
+      }
+
+      #frstRcpDir {
+        line-height: 2.5em;
+      }
+
+      .soFrChic{
+        float: left;
+      }
+
+      #soFrChic_IngrTable tr td{
+        text-align: center;
+        padding: 10px;
+
+      }
+
+      #soFrChic_IngrTable {
+        border-collapse: collapse;
+      }
+
+      #chicPic {
+        width: 550px;
+        height: 500px;
+      }
+
+      .soFrChicPic{
+          float:right;
+      }
+
+      tr:nth-child(even) {
+        background-color: rgba(34, 162, 73, 0.78);
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <h1 id="TOP">Southern Fried Chicken</h1>
+
+    <div class="soFrChic">
+      <div class="">
+        <h3>Ingredients:</h3>
+
+        <table id="soFrChic_IngrTable">
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Have?</th>
+          </tr>
+
+          <tr>
+            <td>Bone-in chicken w/ skin</td>
+            <td>n/a</td>
+            <td><input type="checkbox" name="checkBox1" value="chicken"> </td>
+          </tr>
+
+          <tr>
+            <td>Buttermilk</td>
+            <td>n/a</td>
+            <td><input type="checkbox" name="checkBox2" value="buttMilk"> </td>
+          </tr>
+
+          <tr>
+            <td>All-purpose flour</td>
+            <td>n/a</td>
+            <td><input type="checkbox" name="checkBox3" value="flour"> </td>
+          </tr>
+
+          <tr>
+            <td>Eggs</td>
+            <td>6</td>
+            <td><input type="checkbox" name="checkBox4" value="egg"> </td>
+          </tr>
+
+          <tr>
+            <td>Milk</td>
+            <td>n/a</td>
+            <td><input type="checkbox" name="checkBox5" value="milk"> </td>
+          </tr>
+
+          <tr>
+            <td>Tony’s Cajun Seasoning</td>
+            <td>heavy</td>
+            <td><input type="checkbox" name="checkBox6" value="seasoningCajun"> </td>
+          </tr>
+
+          <tr>
+            <td>Onion salt </td>
+            <td>heavy</td>
+            <td><input type="checkbox" name="checkBox7" value="salt"> </td>
+          </tr>
+
+          <tr>
+            <td>Lard</td>
+            <td>2 blocks (2lbs?)</td>
+            <td><input type="checkbox" name="checkBox8" value="lard"> </td>
+          </tr>
+
+          <tr>
+            <td>Salt</td>
+            <td>Post-cook seasoning</td>
+            <td><input type="checkbox" name="checkBox5" value="milk"> </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="soFrChicPic">
+        <img id="chicPic" src="../foodImg/southernFriedChicken.jpg" alt="southernFriedChicken">
+      </div>
+
+      <div class="soFrChic_Dir">
+        <h3>Directions:</h3>
+
+        <form id="frstRcpDir" action="index.html" method="post">
+          <input type="checkbox" name="SoFrChic_Step1" value="step1">1. Marinade chicken overnight in buttermilk. <br>
+          <input type="checkbox" name="SoFrChic_Step2" value="step2">2. Take chicken out and coat with All-purpose flour. <br>
+          <input type="checkbox" name="SoFrChic_Step3" value="step3">3. Mix leftover buttermilk with six eggs and milk. <br>
+          <input type="checkbox" name="SoFrChic_Step4" value="step4">4. Mix large container of all purpose flour with heavy doses onion salt and Tony’s Cajun seasoning. <br>
+          <input type="checkbox" name="SoFrChic_Step5" value="step5">5. Dip flour coated chicken in egg/milk mixture and immediately coat in another layer of the seasoned flour (from step 4, hard press the flour into the chicken like you're choking it). <br>
+          <input type="checkbox" name="SoFrChic_Step6" value="step6">6. Melt two blocks of lard in a large iron skillet. When lard starts to smoke, start cooking chicken. <span style="font-weight:bold">If there is no sizzle when cooking the chicken, lard isn’t hot enough.</span> <br>
+          <input type="checkbox" name="SoFrChic_Step6" value="step7">7. When finished, place on a drain rack and salt both sides. <br>
+        </form>
+      </div>
+
+      <div class="noteArea">
+        <h3>Notes:</h3>
+        <textarea name="notes" rows="10" cols="80" placeholder="Note here for future attempts.....but it won't save (yet!)"></textarea>
+
+      </div>
+
+      <a href="#TOP">TOP</a>
+
+    </div>
+
+
+  </body>
+</html>
