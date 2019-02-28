@@ -114,7 +114,7 @@ header {
 }
 
 #showcase {
-	background-image: url("./foodImg/bg_showcase.jpg");
+	background-image: url("../foodImg/bg_showcase.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #e6e6e6;
